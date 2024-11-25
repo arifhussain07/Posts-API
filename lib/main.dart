@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (_)=> PostsBloc()),
       ],
       child: MaterialApp(
-        title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
+
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),

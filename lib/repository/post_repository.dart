@@ -13,6 +13,7 @@ Future<List<PostModel>> fetchPost()async{
       final body = json.decode(response.body) as List;
       return body.map((e){
         return PostModel(
+          id: e['id'] as int,
             postId: e['postId'] as int,
             email: e['email'] as String,
             body: e['body']as String,

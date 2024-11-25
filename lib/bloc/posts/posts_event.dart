@@ -1,7 +1,3 @@
-
-
-
-
 import 'package:equatable/equatable.dart';
 
 abstract class PostsEvent extends Equatable{
@@ -9,6 +5,10 @@ abstract class PostsEvent extends Equatable{
   // TODO: implement props
   List<Object?> get props => [];
 }
-class PostFetched extends PostsEvent{
+class PostFetched extends PostsEvent{}
+
+class SearchItem extends PostsEvent{
+final String stSearch;
+SearchItem(this.stSearch);
 
 }
